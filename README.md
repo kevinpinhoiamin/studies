@@ -6,4 +6,4 @@ This is a repository that contains all the code I implemented for study.
 
 - java
   - alura
-    - course1
+    - [course1](java/alura/course1)
