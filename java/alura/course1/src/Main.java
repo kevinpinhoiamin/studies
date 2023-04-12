@@ -6,11 +6,11 @@ public class Main {
         int releaseYear = 2022;
         System.out.println("Release year: " + releaseYear);
         boolean includedInPlan = true;
-        double grade = 8.1;
+        double rating = 8.1;
 
-        // Average grade calculated from 3 grades
-        double averageGrade = (9.8 + 6.3 + 8.0) / 3;
-        System.out.println(averageGrade);
+        // Average rating calculated from 3 grades
+        double averageRating = (9.8 + 6.3 + 8.0) / 3;
+        System.out.println(averageRating);
 
         String synopsis = """
                 Top Gun Movie
@@ -20,7 +20,7 @@ public class Main {
                 """ + releaseYear;
         System.out.println(synopsis);
 
-        int classification = (int) (averageGrade / 2);
+        int classification = (int) (averageRating / 2);
         System.out.println(classification);
     }
 }
