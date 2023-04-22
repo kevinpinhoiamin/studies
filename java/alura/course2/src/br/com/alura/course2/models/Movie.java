@@ -1,6 +1,8 @@
 package br.com.alura.course2.models;
 
-public class Movie extends Title {
+import br.com.alura.course2.calculations.Sortable;
+
+public class Movie extends Title implements Sortable {
 
     private String director;
 
@@ -12,4 +14,8 @@ public class Movie extends Title {
         this.director = director;
     }
 
+    @Override
+    public int getClassication() {
+        return (int) this.getAverageRatings() / 2;
+    }
 }

@@ -1,4 +1,6 @@
+import br.com.alura.course2.calculations.RecommendationFilter;
 import br.com.alura.course2.calculations.TimeCalculator;
+import br.com.alura.course2.models.Episode;
 import br.com.alura.course2.models.Movie;
 import br.com.alura.course2.models.Series;
 
@@ -41,6 +43,15 @@ public class Main {
         calculator.include(otherMovie);
         calculator.include(lost);
         System.out.println(calculator.getTotalTime());
+
+        RecommendationFilter filter = new RecommendationFilter();
+        filter.filter(myMovie);
+
+        Episode episode = new Episode();
+        episode.setNumber(1);
+        episode.setSeries(lost);
+        episode.setTotalViews(100);
+        filter.filter(episode);
 
     }
 
