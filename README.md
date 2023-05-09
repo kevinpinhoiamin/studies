@@ -8,3 +8,4 @@ This is a repository that contains all the code I implemented for study.
   - alura
     - [course1](java/alura/course1)
     - [course2](java/alura/course2)
+    - [course3](java/alura/course3)
