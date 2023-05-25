@@ -10,9 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Movie myMovie = new Movie();
-        myMovie.setName("Godfather");
-        myMovie.setReleaseYear(1972);
+        Movie myMovie = new Movie("Godfather", 1972);
         myMovie.setDurationInMinutes(175);
         System.out.println("Movie duration: " + myMovie.getDurationInMinutes());
 
@@ -26,18 +24,14 @@ public class Main {
         // myMovie.totalRatings = 10;
         // System.out.println(myMovie.getAverageRatings());
 
-        Series lost = new Series();
-        lost.setName("Lost");
-        lost.setReleaseYear(2004);
+        Series lost = new Series("Lost", 2004);
         lost.displayTechnicalSheet();
         lost.setSeasons(6);
         lost.setEpisodesPerSeason(20);
         lost.setMinutesPerEpisode(50);
         System.out.println("Duration to marathon Lost: " + lost.getDurationInMinutes());
 
-        Movie otherMovie = new Movie();
-        otherMovie.setName("Avatar");
-        otherMovie.setReleaseYear(2009);
+        Movie otherMovie = new Movie("Avatar", 2009);
         otherMovie.setDurationInMinutes(162);
 
         TimeCalculator calculator = new TimeCalculator();
@@ -55,14 +49,12 @@ public class Main {
         episode.setTotalViews(100);
         filter.filter(episode);
 
-        Movie dogville = new Movie();
-        dogville.setDurationInMinutes(178);
-        dogville.setName("Dogville");
-        dogville.setReleaseYear(2003);
-        dogville.makeRating(10);
+        Movie paulosMovie = new Movie("Dogville", 2003);
+        paulosMovie.setDurationInMinutes(178);
+        paulosMovie.makeRating(10);
 
         ArrayList<Movie> movieList = new ArrayList<>();
-        movieList.add(dogville);
+        movieList.add(paulosMovie);
         movieList.add(myMovie);
         movieList.add(otherMovie);
         System.out.println("List size: " + movieList.size());
