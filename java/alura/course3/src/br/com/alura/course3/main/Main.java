@@ -1,3 +1,5 @@
+package br.com.alura.course3.main;
+
 import br.com.alura.course3.calculations.RecommendationFilter;
 import br.com.alura.course3.calculations.TimeCalculator;
 import br.com.alura.course3.models.Episode;
@@ -49,7 +51,7 @@ public class Main {
         episode.setTotalViews(100);
         filter.filter(episode);
 
-        Movie paulosMovie = new Movie("Dogville", 2003);
+        var paulosMovie = new Movie("Dogville", 2003);
         paulosMovie.setDurationInMinutes(178);
         paulosMovie.makeRating(10);
 
