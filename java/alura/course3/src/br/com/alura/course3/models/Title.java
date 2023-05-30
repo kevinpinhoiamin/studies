@@ -1,6 +1,6 @@
 package br.com.alura.course3.models;
 
-public class Title {
+public class Title implements Comparable<Title> {
 
     private String name;
     private int releaseYear;
@@ -68,4 +68,8 @@ public class Title {
         return this.sumOfRatings / this.totalRatings;
     }
 
+    @Override
+    public int compareTo(Title title) {
+        return title.getName().compareTo(title.getName());
+    }
 }

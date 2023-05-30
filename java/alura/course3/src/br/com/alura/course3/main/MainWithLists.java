@@ -5,6 +5,9 @@ import br.com.alura.course3.models.Series;
 import br.com.alura.course3.models.Title;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class MainWithLists {
 
@@ -20,7 +23,7 @@ public class MainWithLists {
 
         Movie f1 = paulosMovie;
 
-        ArrayList<Title> list = new ArrayList<>();
+        List<Title> list = new ArrayList<>();
         list.add(paulosMovie);
         list.add(myMovie);
         list.add(otherMovie);
@@ -31,8 +34,25 @@ public class MainWithLists {
             if (item instanceof Movie movie && movie.getClassication() > 2) {
                 System.out.println("Classification: " + movie.getClassication());
             }
-
         }
+
+        List<String> artistSearch = new ArrayList<>();
+        artistSearch.add("Adam Sandler");
+        artistSearch.add("Paulo");
+        artistSearch.add("Jacqueline");
+        System.out.println(artistSearch);
+
+        Collections.sort(artistSearch);
+        System.out.println("After sorting");
+        System.out.println(artistSearch);
+
+        Collections.sort(list);
+        System.out.println("Sorted title list");
+        System.out.println(list);
+
+        list.sort(Comparator.comparing(Title::getReleaseYear));
+        System.out.println("Sorted by release year");
+        System.out.println(list);
 
     }
 
