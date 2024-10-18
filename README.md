@@ -21,3 +21,4 @@ This is a repository that contains all the code I implemented for study.
     - [course3](angular/alura/course3)
     - [course4](angular/alura/course4)
     - [course5](angular/alura/course5)
+    - [course6](angular/alura/course6)
