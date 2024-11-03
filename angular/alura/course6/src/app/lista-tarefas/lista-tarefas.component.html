@@ -3,6 +3,7 @@
     <button (click)="mostrarOuEsconderFormulario()">Criar nova tarefa</button>
   </div>
   <form
+    @shownState
     class="formulario ff-prompt"
     [formGroup]="formulario"
     *ngIf="formAberto"
@@ -92,6 +93,7 @@
                 : 'icone-unchecked'
             "
             (click)="finalizarTarefa(tarefa.id)"
+            [@checkButton]="tarefa.id === id ? 'checked' : 'unchecked'"
           ></button>
         </p>
       </div>
