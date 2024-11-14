@@ -39,7 +39,7 @@ export class ListaLivrosComponent {
     map((retornoAPI) => (this.livrosResultado = retornoAPI)),
     map((resultado) => resultado['items'] ?? []),
     tap(console.log),
-    map((items) => this.livrosResultadoParaLivros(items)),
+    map((items) => (this.listaLivros = this.livrosResultadoParaLivros(items))),
     catchError((error) => {
       // this.mensagemErro = 'Ops, ocorreu um erro. Recarregue a aplicação!';
       // return EMPTY;
