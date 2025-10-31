@@ -25,3 +25,4 @@ This is a repository that contains all the code I implemented for study.
     - [course7](angular/alura/course7)
   - udemy
     - [course1](angular/udemy/course1)
+    - [course2](angular/udemy/course2)

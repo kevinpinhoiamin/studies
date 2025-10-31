@@ -1,0 +1,3 @@
+[submodule "angular/udemy/course2"]
+	path = angular/udemy/course2
+	url = https://github.com/angular-university/angular-advanced-course.git
